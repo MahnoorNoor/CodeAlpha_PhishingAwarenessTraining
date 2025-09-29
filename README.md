@@ -1,17 +1,25 @@
-## Phishing Awareness Training (Task 2)
+## Basic Network Sniffer (Task 1)
 
 Files:
-- `phishing_presentation/phishing_slides.pdf`
-- `phishing_presentation/phishing_quiz.txt` (fallback copy)
-- `phishing_presentation/phishing_speaker_notes.txt`
-
-Quiz (live): https://docs.google.com/forms/d/e/1FAIpQLSex_2oIysagVjKV3aoPekVq853JiAAEqYvnB-b5Ii-Iyy-ARg/viewform?fbzx=-1242665144081228936
+- `simple_sniffer.py` : Python sniffer script (Scapy-based).
+- `sniff_output.txt` : Sample console output from a sniffing session.
+- `capture.pcap` : (Optional) Saved packet capture file (open in Wireshark).
+- `analysis_sniffer.py` : Script to summarize captured traffic by protocol.
+- `sniffer_analysis.txt` : Result of the analysis script (protocol counts).
 
 Summary:
-A short slide deck that explains phishing, shows common signs, social engineering examples, and best practices to stay safe. Includes a 3-question interactive quiz (link above). Speaker notes are provided for a short screencast or presentation.
+A simple Python program that captures and analyzes network packets. It displays source/destination IPs, protocol type (TCP/UDP), and a preview of packet payloads. An additional script summarizes the captured packets by protocol count.
 
-How to view:
-1. Open pdf to view the slides.
-2. Take the quiz using the link above.
+How to run:
+1. Install Scapy  
+   - On Kali/Linux: `sudo apt install python3-scapy`  
+   - Or inside venv: `pip install scapy`
+2. Capture packets and save output:  
+   `sudo python3 simple_sniffer.py 50 > sniff_output.txt`
+3. (Optional) Save a `.pcap` file:  
+   `sudo python3 simple_sniffer.py 0 wlan0 capture.pcap`
+4. Analyze protocol counts:  
+   `python3 analysis_sniffer.py capture.pcap > sniffer_analysis.txt`
 
 ---
+
