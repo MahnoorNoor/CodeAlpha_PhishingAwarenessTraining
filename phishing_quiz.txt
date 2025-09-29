@@ -1,0 +1,10 @@
+Phishing Awareness Quiz (3 questions)
+
+Q1. An email asks you to reset your password and it has lots of spelling mistakes. Should you click the link?
+Answer: B) No — it looks suspicious.
+
+Q2. You hover your mouse over a link and the domain is bank-secure-login.com while the email says it’s from YourBank. Is this safe?
+Answer: B) No — domain is not the official bank domain.
+
+Q3. Should you enable two-factor authentication (2FA) on your accounts?
+Answer: C) Yes — always when available.
