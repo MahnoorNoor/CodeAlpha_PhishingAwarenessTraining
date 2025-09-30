@@ -1,25 +1,31 @@
-## Basic Network Sniffer (Task 1)
+## Phishing Awareness Training (Task 2)
 
 Files:
-- `simple_sniffer.py` : Python sniffer script (Scapy-based).
-- `sniff_output.txt` : Sample console output from a sniffing session.
-- `capture.pcap` : (Optional) Saved packet capture file (open in Wireshark).
-- `analysis_sniffer.py` : Script to summarize captured traffic by protocol.
-- `sniffer_analysis.txt` : Result of the analysis script (protocol counts).
-
-Summary:
-A simple Python program that captures and analyzes network packets. It displays source/destination IPs, protocol type (TCP/UDP), and a preview of packet payloads. An additional script summarizes the captured packets by protocol count.
-
-How to run:
-1. Install Scapy  
-   - On Kali/Linux: `sudo apt install python3-scapy`  
-   - Or inside venv: `pip install scapy`
-2. Capture packets and save output:  
-   `sudo python3 simple_sniffer.py 50 > sniff_output.txt`
-3. (Optional) Save a `.pcap` file:  
-   `sudo python3 simple_sniffer.py 0 wlan0 capture.pcap`
-4. Analyze protocol counts:  
-   `python3 analysis_sniffer.py capture.pcap > sniffer_analysis.txt`
+- `phishing_presentation/phishing_slides.pdf` : Slide deck explaining phishing threats.
+- `phishing_presentation/phishing_quiz.txt` : Fallback text version of the quiz.
+  
+Quiz (live):
+[👉 Take the Quiz Here](https://docs.google.com/forms/d/e/1FAIpQLSex_2oIysagVjKV3aoPekVq853JiAAEqYvnB-b5Ii-Iyy-ARg/viewform?fbzx=-1242665144081228936)
 
 ---
+
+### 📖 Summary
+This training module introduces **phishing attacks** and how to defend against them.  
+It explains:
+- How to recognize phishing emails and fake websites.  
+- Social engineering tactics used by attackers.  
+- Best practices and tips to avoid falling victim.  
+
+The training includes real-world examples, a **3-question interactive quiz**,  to guide presentations or video recordings.
+
+---
+
+### ▶️ How to View
+1. Open `phishing_presentation/phishing_slides.pdf` to view the slides.  
+2. Take the live quiz using the link above.  
+
+
+---
+
+✅ This completes **Task 2 — Phishing Awareness Training**.
 
